@@ -16,6 +16,7 @@
 		B41EA89A2763290F00E95879 /* CarAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EA8992763290F00E95879 /* CarAppTests.swift */; };
 		B41EA8A42763290F00E95879 /* CarAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EA8A32763290F00E95879 /* CarAppUITests.swift */; };
 		B41EA8A62763290F00E95879 /* CarAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EA8A52763290F00E95879 /* CarAppUITestsLaunchTests.swift */; };
+		B41EA8B32763402200E95879 /* CarTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41EA8B22763402200E95879 /* CarTableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B41EA89F2763290F00E95879 /* CarAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41EA8A32763290F00E95879 /* CarAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAppUITests.swift; sourceTree = "<group>"; };
 		B41EA8A52763290F00E95879 /* CarAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B41EA8B22763402200E95879 /* CarTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B41EA8842763290D00E95879 /* SceneDelegate.swift */,
 				B41EA8862763290D00E95879 /* ViewController.swift */,
 				B41EA8882763290D00E95879 /* Main.storyboard */,
+				B41EA8B22763402200E95879 /* CarTableView.xib */,
 				B41EA88B2763290E00E95879 /* Assets.xcassets */,
 				B41EA88D2763290F00E95879 /* LaunchScreen.storyboard */,
 				B41EA8902763290F00E95879 /* Info.plist */,
@@ -233,6 +236,7 @@
 			files = (
 				B41EA88F2763290F00E95879 /* LaunchScreen.storyboard in Resources */,
 				B41EA88C2763290E00E95879 /* Assets.xcassets in Resources */,
+				B41EA8B32763402200E95879 /* CarTableView.xib in Resources */,
 				B41EA88A2763290D00E95879 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
