@@ -13,6 +13,6 @@ class TableCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        kmLbl.layer.borderColor = UIColor(red: 113/255, green: 242/255, blue: 189/255, alpha: 1).cgColor
+        kmLbl.layer.borderColor = UIColor(red: 113/255, green: 242/255, blue: 189/255, alpha: 0.5).cgColor
     }
 }

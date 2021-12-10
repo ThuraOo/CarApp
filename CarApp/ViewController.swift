@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        prepareUI()
         hideTableContainer(animate: false)
     }
     
@@ -42,8 +43,7 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName: "TableCell", bundle: nil), forCellReuseIdentifier: "TableCell")
     }
     private func prepareUI() {
-        tableViewContainerOffsetY.constant = self.view.bounds.height
-        self.view.layoutIfNeeded()
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     private func hideTableContainer(animate: Bool) {
