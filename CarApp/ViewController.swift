@@ -23,12 +23,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var curLocationView: UIView!
     @IBOutlet weak var availableView: UIView!
     
+    private var preparedViews = false
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupTableView()
-        prepareUI()
-        hideTableContainer(animate: false)
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if (!preparedViews) {
+            preparedViews = true
+            setupTableView()
+            prepareUI()
+            hideTableContainer(animate: false)
+        }
     }
     
     @IBAction func backArrowPressed(_ sender: UIButton) {
@@ -52,7 +57,7 @@ class ViewController: UIViewController {
     
     private func hideTableContainer(animate: Bool) {
         searchResultBarOffsetY.constant = -120
-        searchBarOffsetY.constant = self.view.bounds.height - 320
+        searchBarOffsetY.constant = self.view.safeAreaLayoutGuide.layoutFrame.height - 220
         searchBarOffsetX.constant = 20
         searchBarOffsetXEnd.constant = 20
         goBtnWidth.constant = 60

@@ -961,7 +961,7 @@
                                                         </variation>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="vLA-X2-YN5">
-                                                        <rect key="frame" x="103" y="0.0" width="46.333333333333343" height="46.333333333333336"/>
+                                                        <rect key="frame" x="102.99999999999997" y="0.0" width="46.333333333333343" height="46.333333333333336"/>
                                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="vLA-X2-YN5" secondAttribute="height" multiplier="1:1" id="afV-2h-avd"/>
