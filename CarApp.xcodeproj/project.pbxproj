@@ -18,6 +18,7 @@
 		B41EA8A62763290F00E95879 /* CarAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EA8A52763290F00E95879 /* CarAppUITestsLaunchTests.swift */; };
 		B41EA8B32763402200E95879 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41EA8B22763402200E95879 /* TableCell.xib */; };
 		B41EA8B5276350DC00E95879 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EA8B4276350DC00E95879 /* TableCell.swift */; };
+		B41EA8B7276385D200E95879 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EA8B6276385D200E95879 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B41EA8A52763290F00E95879 /* CarAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B41EA8B22763402200E95879 /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		B41EA8B4276350DC00E95879 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		B41EA8B6276385D200E95879 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B41EA8822763290D00E95879 /* AppDelegate.swift */,
 				B41EA8842763290D00E95879 /* SceneDelegate.swift */,
 				B41EA8862763290D00E95879 /* ViewController.swift */,
+				B41EA8B6276385D200E95879 /* DetailViewController.swift */,
 				B41EA8882763290D00E95879 /* Main.storyboard */,
 				B41EA8B4276350DC00E95879 /* TableCell.swift */,
 				B41EA8B22763402200E95879 /* TableCell.xib */,
@@ -267,6 +270,7 @@
 			files = (
 				B41EA8872763290D00E95879 /* ViewController.swift in Sources */,
 				B41EA8832763290D00E95879 /* AppDelegate.swift in Sources */,
+				B41EA8B7276385D200E95879 /* DetailViewController.swift in Sources */,
 				B41EA8B5276350DC00E95879 /* TableCell.swift in Sources */,
 				B41EA8852763290D00E95879 /* SceneDelegate.swift in Sources */,
 			);

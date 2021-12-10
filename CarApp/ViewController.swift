@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lblRent: UILabel!
     @IBOutlet weak var alertBtn: UIButton!
+    @IBOutlet weak var pinView: UIView!
+    @IBOutlet weak var curLocationView: UIView!
+    @IBOutlet weak var availableView: UIView!
     
     
     override func viewDidLoad() {
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName: "TableCell", bundle: nil), forCellReuseIdentifier: "TableCell")
     }
     private func prepareUI() {
+        pinView.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
         self.navigationController?.navigationBar.isHidden = true
     }
     
@@ -57,12 +61,16 @@ class ViewController: UIViewController {
         if (animate) {
             UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
                 self.alertBtn.transform = CGAffineTransform(scaleX: 1, y: 1)
+                self.curLocationView.transform = CGAffineTransform(scaleX: 1, y: 1)
+                self.availableView.transform = CGAffineTransform(scaleX: 1, y: 1)
                 self.lblRent.layer.opacity = 1
                 self.view.backgroundColor = UIColor.secondarySystemBackground
                 self.view.layoutIfNeeded()
             }, completion: {res in })
         } else {
             self.alertBtn.transform = CGAffineTransform(scaleX: 1, y: 1)
+            self.curLocationView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            self.availableView.transform = CGAffineTransform(scaleX: 1, y: 1)
             self.lblRent.layer.opacity = 1
             self.view.backgroundColor = UIColor.secondarySystemBackground
             self.view.layoutIfNeeded()
@@ -79,12 +87,16 @@ class ViewController: UIViewController {
         if (animate) {
             UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
                 self.alertBtn.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+                self.curLocationView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+                self.availableView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
                 self.lblRent.layer.opacity = 0
                 self.view.backgroundColor = UIColor.white
                 self.view.layoutIfNeeded()
             }, completion: {res in })
         } else {
             self.alertBtn.transform = CGAffineTransform(scaleX: 0, y: 0)
+            self.curLocationView.transform = CGAffineTransform(scaleX: 0, y: 0)
+            self.availableView.transform = CGAffineTransform(scaleX: 0, y: 0)
             self.lblRent.layer.opacity = 0
             self.view.backgroundColor = UIColor.white
             self.view.layoutIfNeeded()
@@ -103,6 +115,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailView") as! UIViewController
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
